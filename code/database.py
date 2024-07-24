@@ -9,7 +9,7 @@ from langchain_community.vectorstores import Chroma
 import uuid
 
 ### GLOBAL VARIABLES
-CHROMA_PATH = "chroma"
+CHROMA_PATH = "chroma" 
 DATA_PATH = "C:\\Users\\Public\\Downloads\\demo\\text_dataset"
 
 
