@@ -1,0 +1,89 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevents scrollbar from appearing */
+  }
+  
+  header {
+    background-color: rgb(51, 51, 51,0.4);
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .links li {
+    margin-left: 1.5rem;
+  }
+  
+  .links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .links a:hover {
+    color: #ddd;
+  }
+  
+  section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* .scrolling-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    animation: scroll-up 10s linear infinite;
+  } */
+  
+  .scrolling-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+  p{
+    color: white;
+  }
+  
+  @keyframes scroll-up {
+    0% {
+      transform: translateY(100%);
+    }
+    50% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  

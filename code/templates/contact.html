@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/static/stylecontact.css">
+    <title>Our Team</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="home.html">FRUIT DISEASE DETECTION</a></div>
+            <ul class="links">
+                
+                <li><a href="about.html">About</a></li>
+                <li><a href="home.html">home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <li><a href="getstarted.html">get started</a></li>
+            <div class="toggle_btn">
+             <!-- <<i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>-->
+        </div>
+    </header>
+
+    <section id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <small>enhancing your experirnce</small>
+            <div class="team_container"></div>
+                <!--Card1-->
+                <div class="card" style="margin-top: 2rem; margin-bottom: -2rem;">
+                    <div class="image_wrapper">
+                        <img src="assets/person_1.jpg" alt="person_1"> <!--image here-->
+                        <div class="button">
+                            <img src="assets/arrow img2.jpg" alt="Expand"<!--arrow-image here-->
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>ARINDAM</p>
+                        <small>CSE;</b>22BECSE08</small>
+                    </div>
+                </div>
+                 <!--Card2-->
+                 <div class="card">
+                    <div class="image_wrapper">
+                        <img src="assets/person_2.jpg" alt="person_2"> <!--image here-->
+                        <div class="button">
+                            <img src="assets/arrow img2.jpg" alt="Expand"><!--arrow-image here-->
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>RADHIKA</p>
+                        <small>CSE;</b>22BECSE31</small>
+                    </div>
+                </div>
+                 <!--Card3-->
+                 <div class="card">
+                    <div class="image_wrapper">
+                        <img src="" alt=""> <!--image here-->
+                        <div class="button">
+                            <img src="assets/arrow img2.jpg" alt="Expand"><!--arrow-image here-->
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>SALONI</p>
+                        <small>CSE;</b>22BECSE35</small>
+                    
+                    </div>
+                </div>
+                 <!--Card5-->
+                 <div class="card">
+                    <div class="image_wrapper">
+                        <img src="" alt=""> <!--image here-->
+                        <div class="button">
+                            <img src="assets/arrow img2.jpg" alt="Expand"><!--arrow-image here-->
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>TANIYA</p>
+                        <small>CSE;</b>22becse19</small>
+                    </div>
+                </div>
+                 <!--Card6-->
+                 <div class="card">
+                    <div class="image_wrapper">
+                        <img src="" alt=""> <!--image here-->
+                        <div class="button">
+                            <img src="assets/arrow img2.jpg" alt="Expand"><!--arrow-image here-->
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>JAGTESHWAR</p>
+                        <small>CSE;<b>22becsel54</small>
+                    </div>
+                </div>
+                 <!--Card7-->
+                 <div class="card">
+                    <div class="image_wrapper">
+                        <img src="" alt=""> <!--image here-->
+                        <div class="button">
+                            <img src="assets/arrow img2.jpg" alt="Expand"><!--arrow-image here-->
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>FARIDA</p>
+                        <small>CSE;<b>22becse16</small>
+                    </div>
+                </div>
+                 <!--Card8-->
+                 <div class="card">
+                    <div class="image_wrapper">
+                        <img src="" alt=""> <!--image here-->
+                        <div class="button">
+                            <img src="assets/arrow img2.jpg" alt="Expand"><!--arrow-image here-->
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>SAKETH</p>
+                        <small>CSE;<b>22BECSE28</small>
+                    </div>
+                </div>  
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#subscribe">Subscribe</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const toggleBtn =document.querySelector('.toggle_btn')
+        const toggleBtnIcon =document.querySelector('.toggle_btn i')
+        const dropDownMenu =document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

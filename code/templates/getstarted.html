@@ -1,0 +1,52 @@
+<!--
+page with chat
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlantCure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='getstarted.css') }}" />
+    <script src="{{ url_for('static', filename='getstartedscript.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="home.html">FRUIT DISEASE DETECTION</a></div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="section" id="image-response">
+            <h2>Image Response</h2>
+            <div class="chat-box" id="image-chat-box">
+                <!-- Image preview will appear here -->
+            </div>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="input-box">
+                    <label for="image-input">Upload your image:</label>
+                    <input type="file" id="image-input" name="file" accept="image/*" onchange="previewImage()">
+                    <button type="submit">Upload</button>
+                </div>
+            </form>
+        </div>
+        <div class="section" id="text-response">
+            <h2>Text Response</h2>
+            <div class="chat-box" id="text-chat-box">
+                <!-- Text messages will appear here -->
+            </div>
+            <div class="input-box">
+                <label for="text-input">Enter your text:</label>
+                <input type="text" id="text-input" placeholder="Type here...">
+                <button id="sendButton" type="button">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+/.vscode/
+/base/
+/text_dataset/
+/code/__pycache__/
+/code/chroma/
+/code/sessions/
