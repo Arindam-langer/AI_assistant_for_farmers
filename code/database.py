@@ -10,7 +10,7 @@ import uuid
 
 ### GLOBAL VARIABLES
 CHROMA_PATH = "chroma"
-DATA_PATH = "C:\\Users\\Public\\Downloads\\demo\\text_dataset"
+DATA_PATH = "C:\\Users\\Public\\Downloads\\demo\\text_dataset" ##add your own text dataset location##
 
 
 def main():

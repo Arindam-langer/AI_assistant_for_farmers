@@ -24,7 +24,7 @@ PASSWORD = "123"
 model = models.resnet50(pretrained=True)
 num_inftr = model.fc.in_features
 model.fc = nn.Linear(num_inftr, 4)
-model.load_state_dict(torch.load('templates/model12.pth',map_location=torch.device("cpu")))
+model.load_state_dict(torch.load('templates/model12.pth',map_location=torch.device("cpu"))) #model path
 model.eval()
 
 # Class names for plant disease detection
