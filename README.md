@@ -7,6 +7,13 @@ prerquisites
 4. chroma db 
 5. embedding model: mxbai-embed-large
 6. torch
+7. flask
+8. asyncio
+9. PIL
+10. torch
+11. uuid
+12. argeparse
+13. 
 
 
 
